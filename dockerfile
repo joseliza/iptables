@@ -5,6 +5,7 @@
 
 FROM alpine
 
+ENV PS1='\u@\h:\w> '
 RUN apk update \
 && apk add iptables \
 && apk add nano
